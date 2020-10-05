@@ -8633,9 +8633,26 @@ textarea.form-control {
   background-repeat: no-repeat;
   background-position: center center; }
 
+#blog-section{
+  background-image: linear-gradient(-50deg, #64d99b  20%,  #083d37 100%);
+
+  /* linear-gradient(-44deg, rgb(8, 61, 55) 61%, rgba(11,84,75,1) 30%) */
+}
+
+
+.app-shape-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+  
+
 .testimony-section {
   position: relative;
-  background: #0b544b; }
+  background: #0b544b;
+  background: linear-gradient(44deg, rgb(8, 61, 55) 64%, rgba(11,84,75,1) 30%);
+
+}
   .testimony-section .overlay {
     position: absolute;
     top: 0;
@@ -9288,4 +9305,136 @@ textarea.form-control {
 
 .w-80{
   max-width: 80%;
+}
+
+
+/* ===================================================================
+ * # download
+ *
+ * ------------------------------------------------------------------- */
+ .s-download {
+  padding-top: 12rem;
+  background-color: #083d37;
+  color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  position: relative;
+  /* background: linear-gradient(-44deg, rgb(255, 255, 255) 70%, rgba(11,84,75,1) 30%); */
+  background: linear-gradient(-44deg, rgb(8, 61, 55) 61%, rgba(11,84,75,1) 30%);
+}
+
+.s-download .download-content {
+  padding-top: 8rem;
+  padding-bottom: 10.6rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.s-download .display-1,
+.s-download .display-2 {
+  color: #FFFFFF;
+}
+
+.s-download .download-content__badges {
+  list-style: none;
+  margin: 1.2rem 0 0 -6px;
+}
+
+.s-download .download-content__badges li {
+  display: inline-block;
+  margin: 0 6px;
+  padding-left: 0;
+}
+
+.s-download .download-content__badges li a {
+  display: block;
+  width: 232px;
+  height: 72px;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 232px 72px;
+}
+
+.s-download .download-content__badges li a.badge-appstore {
+  background-image: url("../images/appstore.png");
+}
+
+.s-download .download-content__badges li a.badge-googleplay {
+  background-image: url("../images/google-play.png");
+}
+
+.s-download .download-content__image {
+  position: absolute;
+    top: -150px;
+    left: 0px;
+    width: 80%;
+}
+.s-download  .text-container{
+  
+  padding-bottom: 12rem;
+}
+.s-download  a{
+  color: #fff;
+}
+.s-download  a:hover{
+  color: #0b544b;
+}
+
+
+
+
+/* ===================================================================
+ * # process
+ *
+ * ------------------------------------------------------------------- */
+ .s-process {
+  padding-top: 12rem;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  position: relative;
+}
+
+.s-process .process-bottom-image {
+  margin-top: 3.2rem;
+  max-width: 1000px;
+}
+
+.s-process img {
+  vertical-align: bottom;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## about process
+ * ------------------------------------------------------------------- */
+.process {
+  margin-top: 3.2rem;
+  counter-reset: ctr;
+}
+
+.process h3 {
+  padding-left: 6.4rem;
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+  line-height: 4.8rem;
+  position: relative;
+}
+
+.process h3::before {
+  content: counter(ctr);
+  counter-increment: ctr;
+  display: block;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #00a650;
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
